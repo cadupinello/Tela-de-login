@@ -38,7 +38,6 @@ function App() {
     <div>
       <AuthProvider value={{ user }}>
         <Router>
-          <Navbar />
           <RoutesApp />
           <GlobalStyle />
         </Router>

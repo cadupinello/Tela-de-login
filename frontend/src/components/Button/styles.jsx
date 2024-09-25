@@ -6,11 +6,15 @@ export const Button = styled.button`
   border: none;
   border-radius: 5px;
   width: 100%;
-  cursor: pointer;
   background-color: #${props => `${props.backgroundColor}`};
   color: #${props => `${props.color}`};
   font-weight: 600;
   font-size: 16px;
-  max-width: 350px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #023530;
+  }
 
 `;

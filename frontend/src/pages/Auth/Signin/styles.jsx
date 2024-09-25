@@ -1,37 +1,39 @@
+import FormControlStyle from '@mui/material/FormControl'
 import styled from 'styled-components';
 
+
+export const Title = styled.h3`
+  font-size: 48px;
+  color: #a6a6a6;
+  font-weight: 900;
+  margin-bottom: 30px;
+  font-family: 'Nunito';
+  text-align: center;
+`
 export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
-  height: 100vh;
 `;
 
-export const Content = styled.div`
-  gap: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+export const FormControl = styled(FormControlStyle)`
   width: 100%;
-  box-shadow: 0 1px 2px #0003;
-  background-color: #fff;
-  max-width: 350px;
-  padding: 20px;
-  border-radius: 5px;
-`;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-export const Label = styled.label `
-  font-size: 18px;
-  color: #676767;
-  font-weight: 600;
+  label {
+    font-size: 16px;
+    color: #676767;
+    margin-top: 10px;
+  }
 `;
 
 export const LabelSignin = styled.label `
   font-size: 16px;
   color: #676767;
+  margin: 15px 0;
 `;
 
 export const Strong = styled.strong `
