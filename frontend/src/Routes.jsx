@@ -1,5 +1,5 @@
 import react from 'react'
-import {Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home'
@@ -38,15 +38,13 @@ const RoutesApp = () => {
     <>
       <Routes>
         {/* Rotas Publicas */}
-        <Route path='/' element={<Home />} />
         <Route path='/signin' element={
           <PublicRoute>
             <AuthLayout>
               <Signin />
             </AuthLayout>
           </PublicRoute>
-        }
-        />
+        } />
         <Route path='/register' element={
           <PublicRoute>
             <AuthLayout>
@@ -64,7 +62,7 @@ const RoutesApp = () => {
         />
 
         {/* Rotas de página não encontrada */}
-        <Route path="*" element={<NotFound/>}/>
+        <Route path="*" element={<Navigate to="/signin" />} />
       </Routes>
     </>
   )
