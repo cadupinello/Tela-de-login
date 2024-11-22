@@ -29,5 +29,8 @@ Este projeto implementa um sistema completo de autenticação utilizando React e
   ```bash
     npm start
   ```
+
+![image](https://github.com/user-attachments/assets/d38b8be5-f11e-45e9-9109-8954d0faa298)
+
 ## Licença
 Este projeto está sob a licença MIT.
